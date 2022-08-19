@@ -52,12 +52,6 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
-			<exclusions>
-				<exclusion>
-					<groupId>org.junit.vintage</groupId>
-					<artifactId>junit-vintage-engine</artifactId>
-				</exclusion>
-			</exclusions>
 		</dependency>
 		<dependency>
 			<groupId>io.springfox</groupId>
@@ -79,7 +73,7 @@
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.13.2</version>
+			<version>4.13</version>
 			<scope>test</scope>
 		</dependency>
     </dependencies>
@@ -89,6 +83,13 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<goals>
+							<goal>repackage</goal>
+						</goals>
+					</execution>
+				</executions>
 			</plugin>
 		</plugins>
 	</build>

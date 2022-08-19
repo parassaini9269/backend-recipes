@@ -10,6 +10,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.mockito.InjectMocks;
 import org.mockito.Mock;
+import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.test.context.junit4.SpringRunner;
 
@@ -21,6 +22,7 @@ import static java.lang.Boolean.TRUE;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.Mockito.*;
 
+@SpringBootTest
 @RunWith(SpringRunner.class)
 public class RecipesServiceTest {
 
